@@ -2,7 +2,7 @@ import React from 'react'
 import { Box } from '@chakra-ui/core'
 import List from './List'
 const CollectionViewMapping = {
-  "list":List
+  list: List
 }
 
 export default ({ data, config, view }) => {
