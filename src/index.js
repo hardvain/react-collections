@@ -1,6 +1,13 @@
 import React from 'react'
 import styles from './styles.module.css'
+import Collection from './components/Collection'
+import { ThemeProvider, CSSReset } from '@chakra-ui/core'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export default ({ data, config, view = 'list' }) => {
+  return (
+    <ThemeProvider>
+      <CSSReset />
+      <Collection data={data} config={config} view={view} />
+    </ThemeProvider>
+  )
 }
