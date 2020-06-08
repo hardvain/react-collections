@@ -14,7 +14,7 @@ import Collection from 'react-collections'
 import 'react-collections/dist/index.css'
 import mockData from './data.json'
 
-const listTemplate = (item) => {
+const listItemTemplate = (item) => {
   return (
     <Box>
       <Flex>
@@ -53,7 +53,7 @@ const App = () => {
             <Collection
               data={data}
               config={{
-                template: listTemplate,
+                template: listItemTemplate,
                 onReOrder
               }}
             />

@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { Box, Icon, Flex, Badge } from '@chakra-ui/core'
+import { Box, Icon, Flex, Badge, Button } from '@chakra-ui/core'
 import { GrDrag } from 'react-icons/gr'
 export default ({ data, config }) => {
   const template = config.template
   return (
-    <Box m={5} p={5}>
+    <Box>
       {data.map((item) => (
         <Box key={item.id} borderWidth={1} borderRadius={3} p={2} py={4} mb={1}>
           <Flex>
